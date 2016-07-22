@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/indrimuska/angular-selector/master/dist/angular-selector.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/donate.css">
+
+    <meta charset="UTF-8">
+    <title>Donation Page</title>
+</head>
+<body ng-app='App'>
+<div class="app-page" ng-controller="AppCtrl">
+
+    <div class="form">
+        <img src="images/logo.jpg" id="logo"/>
+        <br>
+        <h6>Select the quanitity of school supplies you would like to donate below or enter a cash donation.</h6>
+        <div class="pics">
+            <figure>
+            <img src="images/backpack.png"/>
+            <figcaption>Backpacks</figcaption>
+            <input type="number" name="quantity" min="1" max="5">
+            </figure>
+            <figure>
+            <img src="images/tissues.png"/>
+            <figcaption>Tissues</figcaption>
+            <input type="number" name="quantity" min="1" max="5">
+            </figure>
+            <figure>
+            <img src="images/notebook.png"/>
+            <figcaption>Notebooks</figcaption>
+            <input type="number" name="quantity" min="1" max="5">
+            </figure>
+            <figure>
+            <img src="images/pencil.png"/>
+            <figcaption>Pencils</figcaption>
+            <input type="number" name="quantity" min="1" max="5">
+            </figure>
+            <figure>
+            <img src="images/compass.png"/>
+            <figcaption>Compasses</figcaption>
+            <input type="number" name="quantity" min="1" max="5">
+            </figure>
+            <figure>
+            <img src="images/money.png"/>
+                <figcaption>Other Donations</figcaption>
+            <input type="text" name="quantity" >
+            </figure>
+        </div>
+        <button type="button"  onclick="location.href='payment.html'"
+                class="btn btn-secondary" id="next">Next
+        </button>
+
+
+
+
+
+    </div>
+</div>
+</body>
+<script data-require="jquery@*" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-resource.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+<script src="//cdn.rawgit.com/indrimuska/angular-selector/master/dist/angular-selector.js"></script>
+<script src="js/donate.js"></script>
+
+</html>
